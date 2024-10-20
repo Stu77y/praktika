@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто Детали — Розничная торговля автозапчастями</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+          <div>
+            <img src="images/logo.svg" alt="logo" class="logo-icon">
+          </div>
+        <div>
+            <nav>
+                <a href="#about">О нас</a>
+                <a href="#products">Товары</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#order">Заказ</a>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Качественные автозапчасти и принадлежности для вашего авто</h2>
+        <p>Найдите всё необходимое для ремонта и обслуживания вашего автомобиля. Доступные цены и быстрая доставка!</p>
+        <a href="#order" class="hero-btn">Оформить заказ</a>
+    </section>
+
+    <!-- О нас -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2>О нас</h2>
+      <p class="intro">Добро пожаловать в <strong>"Авто Детали"</strong>! Мы — команда профессионалов с более чем 10-летним опытом в продаже автозапчастей и принадлежностей. Наша цель — предложить вам качественные детали по доступным ценам.</p>
+      
+      <h3>Почему выбирают нас?</h3>
+      <ul class="benefits">
+          <li><strong>Качество</strong>: Сотрудничаем только с надежными производителями.</li>
+          <li><strong>Обслуживание</strong>: Помогаем вам на каждом этапе — от выбора до заказа.</li>
+          <li><strong>Доступные цены</strong>: Мы регулярно обновляем наши цены и проводим акции.</li>
+          <li><strong>Быстрая доставка</strong>: Обеспечиваем оперативную доставку по всей стране.</li>
+      </ul>
+
+      <p><strong>Наша миссия</strong> — сделать процесс покупки автозапчастей простым и удобным. Мы стремимся стать вашим первым выбором!</p>
+    </div>
+  </section>
+
+
+    <!-- Товары -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2>Наши товары (новинки из Швейцарии)</h2>
+            <div class="product-list">
+                <div class="product">
+                  <img src="images/maslo.svg" alt="Масла и жидкости" width="150" height="150">
+                    <h3>Масла и технические жидкости</h3>
+                </div>
+                <div class="product">
+                  <img src="images/filtr.svg" alt="Фильтры" width="150" height="150">
+                    <h3>Фильтры</h3>
+                </div>
+                <div class="product">
+                  <img src="images/tormoz.svg" alt="Тормозные системы" width="150" height="150">
+                    <h3>Тормозные системы</h3>
+                </div>
+                <div class="product">
+                  <img src="images/dvijok.svg" alt="Запчасти для двигателя" width="150" height="150">
+                    <h3>Запчасти для двигателя</h3>
+                </div>
+            </div>
+            <div class="view-more">
+              <p>Остальные комплектующие смотреть в организации</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+  <section id="reviews" class="section review-section">
+    <div class="container">
+      <h2>Отзывы</h2>
+      <div class="review">
+          <p>"Отличные детали и качественное обслуживание! Удобно заказывать, а доставка всегда быстрая. Особенно понравилось, что на сайте всегда можно найти подробную информацию о товарах."</p>
+          <span>— Иван Петров</span>
+      </div>
+      <div class="review">
+          <p>"Нашла всё, что нужно для ремонта. Прекрасное качество и быстрое обслуживание! Приятно, что сотрудники всегда готовы помочь с выбором и советом."</p>
+          <span>— Елена Смирнова</span>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Заказ -->
+    <section id="order" class="section">
+        <div class="container">
+            <h2>Оформить заказ</h2>
+            <form id="order-form">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" required placeholder="Иван Иванов">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="ivan@example.com">
+                
+                <label for="product">Товар</label>
+                <select id="product" required>
+                    <option value="" disabled selected>Выберите товар</option>
+                    <option value="oil">Масла и жидкости</option>
+                    <option value="filters">Фильтры</option>
+                    <option value="brakes">Тормозные системы</option>
+                    <option value="engine">Запчасти для двигателя</option>
+                </select>
+
+                <label for="comments">Комментарий</label>
+                <textarea id="comments" rows="4" placeholder="Введите ваши пожелания"></textarea>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" title="Вернуться наверх">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Авто Детали. Все права защищены.<br> рп. Голышманово, Голышмановский район, Тюменская область. Комсомольская улица, 103 </p>
+    </footer>
+
+    <script src="js/skript.js"></script>
+</body>
+</html>
